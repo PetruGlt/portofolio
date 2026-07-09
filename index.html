@@ -1,22 +1,28 @@
 <!DOCTYPE html>
 <html lang="ro">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Petru Gălățeanu | Portofoliu Software Engineer</title>
-    <meta name="description" content="Portofoliu personal și proiect de licență al lui Petru Gălățeanu. Proaspăt absolvent FII UAIC, dezvoltator pasionat de .NET, FastAPI, Vue.js și microservicii.">
-    
+    <title>Petru Gălățeanu | Portofoliu </title>
+    <meta name="description" content="PortofoliuL personal al lui Petru Gălățeanu.">
+    <meta name="keywords" content="Petru Gălățeanu, Portofoliu, Software Engineer">
+    <meta name="author" content="Petru Gălățeanu">
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Outfit:wght@300;400;600;800&display=swap"
+        rel="stylesheet">
+
     <!-- CSS Link -->
     <link rel="stylesheet" href="style.css">
-    
+
     <!-- FontAwesome for Icons -->
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <!-- Background Canvas for Interactive Particles -->
     <canvas id="particle-canvas"></canvas>
@@ -30,7 +36,6 @@
             <nav id="nav-menu">
                 <ul>
                     <li><a href="#about" class="nav-link">Despre mine</a></li>
-                    <li><a href="#licenta" class="nav-link">Licență</a></li>
                     <li><a href="#skills" class="nav-link">Competențe</a></li>
                     <li><a href="#projects" class="nav-link">Proiecte</a></li>
                     <li><a href="#contact" class="nav-link btn-contact">Contact</a></li>
@@ -52,7 +57,8 @@
                 <h1 id="hero-title">Petru Gălățeanu</h1>
                 <h2 id="hero-subtitle">Software Engineer | Microservices & Full-Stack Developer</h2>
                 <p class="hero-desc">
-                    Proaspăt absolvent al Facultății de Informatică din Iași (UAIC). Pasionat de arhitecturi de microservicii distribuite, securitate și optimizări.
+                    Proaspăt absolvent al Facultății de Informatică din Iași (UAIC). Pasionat de arhitecturi de
+                    microservicii distribuite, securitate și optimizări.
                 <div class="hero-actions">
                     <a href="#projects" class="btn btn-secondary">Proiecte</a>
                 </div>
@@ -80,23 +86,38 @@
                 <div class="section-line"></div>
             </div>
             <div class="about-grid">
-                <div class="about-text card-glass">
-                    <p>
-                        Sunt absolvent al Facultății de Informatică din cadrul Universității „Alexandru Ioan Cuza” din Iași (FII UAIC). Parcursul meu academic s-a concentrat pe înțelegerea în profunzime a programării, a sistemelor distribuite și a dezvoltării web moderne.
-                    </p>
-                    <p>
-                        Îmi place să construiesc arhitecturi scalabile, să explorez programarea la nivel de sistem și să creez servicii care comunică eficient. 
+                <div class="about-image-wrapper">
+                    <div class="about-image-frame">
+                        <div class="about-image-inner">
+                            <img src="profil.jpeg" alt="Petru Gălățeanu" class="about-image">
+                        </div>
+                    </div>
                 </div>
-                <div class="skills-card card-glass">
-                    <h3>Tehnologii & Expertiză</h3>
-                    <div class="skills-grid">
-                        <div class="skill-tag"><i class="fab fa-vuejs"></i> Vue.js / JS</div>
-                        <div class="skill-tag"><i class="fas fa-terminal"></i> .NET Core / C#</div>
-                        <div class="skill-tag"><i class="fab fa-python"></i> Python (FastAPI)</div>
-                        <div class="skill-tag"><i class="fab fa-docker"></i> Docker / Compose</div>
-                        <div class="skill-tag"><i class="fas fa-server"></i> Nginx / Gateway</div>
-                        <div class="skill-tag"><i class="fas fa-database"></i> PostgreSQL</div>
-                        <div class="skill-tag"><i class="fab fa-cplusplus"></i> C / C++</div>
+                <div class="about-info-container">
+                    <div class="about-text card-glass">
+                        <p>
+                            Sunt absolvent al Facultății de Informatică din cadrul Universității „Alexandru Ioan Cuza”
+                            din
+                            Iași (FII UAIC). Parcursul meu academic s-a concentrat pe înțelegerea în profunzime a
+                            programării, a sistemelor distribuite și a dezvoltării web moderne.
+                        </p>
+                        <p>
+                            Îmi place să construiesc arhitecturi scalabile, să explorez programarea la nivel de sistem
+                            și să
+                            creez servicii care comunică eficient.
+                        </p>
+                    </div>
+                    <div class="skills-card card-glass">
+                        <h3>Tehnologii & Expertiză</h3>
+                        <div class="skills-grid">
+                            <div class="skill-tag"><i class="fab fa-vuejs"></i> Vue.js / JS</div>
+                            <div class="skill-tag"><i class="fas fa-terminal"></i> .NET Core / C#</div>
+                            <div class="skill-tag"><i class="fab fa-python"></i> Python (FastAPI)</div>
+                            <div class="skill-tag"><i class="fab fa-docker"></i> Docker / Compose</div>
+                            <div class="skill-tag"><i class="fas fa-server"></i> Nginx / Gateway</div>
+                            <div class="skill-tag"><i class="fas fa-database"></i> PostgreSQL</div>
+                            <div class="skill-tag"><i class="fab fa-cplusplus"></i> C / C++</div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -113,35 +134,46 @@
                     <span class="project-category">Smart Nutrition Platform</span>
                     <h3>Kalo — Aplicație Multi-service Inteligentă</h3>
                     <p>
-                        <strong>Kalo</strong> este o platformă completă de nutriție, post (fasting) și planificare a rețetelor bazată pe microservicii.
-                         Aceasta integrează un API robust dezvoltat în <strong>.NET Core</strong> pentru logica de business principală și gestiunea utilizatorilor,
-                          împreună cu un serviciu în <strong>Python (FastAPI)</strong> dedicat proceselor de Machine Learning și integrărilor AI.
+                        <strong>Kalo</strong> este o platformă completă de nutriție, post (fasting) și planificare a
+                        rețetelor bazată pe microservicii.
+                        Aceasta integrează un API robust dezvoltat în <strong>.NET Core</strong> pentru logica de
+                        business principală și gestiunea utilizatorilor,
+                        împreună cu un serviciu în <strong>Python (FastAPI)</strong> dedicat proceselor de Machine
+                        Learning și integrărilor AI.
                     </p>
                     <p>
-                        Aplicația integrează de asemenea suport pentru tehnologia <strong>NFC (Near Field Communication)</strong> 
+                        Aplicația integrează de asemenea suport pentru tehnologia <strong>NFC (Near Field
+                            Communication)</strong>
                         pentru scanarea și logarea rapidă a alimentelor în cămară.
                     </p>
                     <div class="licenta-features">
                         <div class="feature-item"><i class="fas fa-check-circle"></i> Gateway Nginx centralizat</div>
-                        <div class="feature-item"><i class="fas fa-check-circle"></i> Autentificare securizată cu JWT partajat</div>
-                        <div class="feature-item"><i class="fas fa-check-circle"></i> Database seeding & migrații automate</div>
-                        <div class="feature-item"><i class="fas fa-check-circle"></i> Inteligență Artificială (FastAPI AI routes)</div>
+                        <div class="feature-item"><i class="fas fa-check-circle"></i> Autentificare securizată cu JWT
+                            partajat</div>
+                        <div class="feature-item"><i class="fas fa-check-circle"></i> Database seeding & migrații
+                            automate</div>
+                        <div class="feature-item"><i class="fas fa-check-circle"></i> Inteligență Artificială (FastAPI
+                            AI routes)</div>
                     </div>
                     <div class="licenta-actions">
-                        <a href="Kalo.pdf" class="btn btn-primary" download><i class="fas fa-file-pdf"></i> Prezentare </a>
-                        <a href="https://github.com/PetruGlt/Kalo" target="_blank" class="btn btn-secondary"><i class="fab fa-github"></i> Cod</a>
+                        <a href="Kalo.pdf" class="btn btn-primary" download><i class="fas fa-file-pdf"></i> Prezentare
+                        </a>
+                        <a href="https://github.com/PetruGlt/Kalo" target="_blank" class="btn btn-secondary"><i
+                                class="fab fa-github"></i> Cod</a>
                     </div>
                 </div>
-                
+
                 <div class="licenta-video card-glass">
                     <h3>Prezentare Video Demonstrativă</h3>
                     <div class="video-container">
                         <video controls poster="" class="cyber-video-player">
                             <source src="ProiectDemo4.mp4" type="video/mp4">
-                            Browserul tău nu suportă redarea video HTML5. Poți descărca fișierul <a href="ProiectDemo4.mp4">aici</a>.
+                            Browserul tău nu suportă redarea video HTML5. Poți descărca fișierul <a
+                                href="ProiectDemo4.mp4">aici</a>.
                         </video>
                     </div>
-                    <p class="video-caption">Demonstrația practică a fluxurilor de utilizator, scanarea NFC și recomandările nutriționale bazate pe inteligență artificială.</p>
+                    <p class="video-caption">Demonstrația practică a fluxurilor de utilizator, scanarea NFC și
+                        recomandările nutriționale bazate pe inteligență artificială.</p>
                 </div>
             </div>
         </section>
@@ -152,7 +184,7 @@
                 <h2 class="section-title">Proiecte </h2>
                 <div class="section-line"></div>
             </div>
-            
+
             <!-- Project Category Filters -->
             <div class="project-filters">
                 <button class="filter-btn active" data-filter="all">Toate</button>
@@ -169,7 +201,8 @@
                         <span class="project-category">Full-Stack / .NET 8</span>
                         <h3>CampusEats</h3>
                     </div>
-                    <p>Sistem modular de comenzi pentru cantină cu arhitectură Vertical Slice, API .NET și interfață Blazor WebAssembly.</p>
+                    <p>Sistem modular de comenzi pentru cantină cu arhitectură Vertical Slice, API .NET și interfață
+                        Blazor WebAssembly.</p>
                     <div class="project-tags">
                         <span>.NET 8</span>
                         <span>Blazor</span>
@@ -186,7 +219,8 @@
                         <span class="project-category">Web Crawler & API</span>
                         <h3>States of the World</h3>
                     </div>
-                    <p>Aplicație Python care colectează date geografice, le stochează în SQLite și le expune prin Flask și Swagger.</p>
+                    <p>Aplicație Python care colectează date geografice, le stochează în SQLite și le expune prin Flask
+                        și Swagger.</p>
                     <div class="project-tags">
                         <span>Python 3</span>
                         <span>Flask</span>
@@ -203,7 +237,8 @@
                         <span class="project-category">Multi-service Backend</span>
                         <h3>Chatbot Bancar</h3>
                     </div>
-                    <p>Sistem bancar de relații clienți integrând un API Spring Boot cu un modul de conversație NestJS și Prisma ORM.</p>
+                    <p>Sistem bancar de relații clienți integrând un API Spring Boot cu un modul de conversație NestJS
+                        și Prisma ORM.</p>
                     <div class="project-tags">
                         <span>Java</span>
                         <span>Spring Boot</span>
@@ -220,7 +255,8 @@
                         <span class="project-category">System Programming</span>
                         <h3>Custom FTP Server</h3>
                     </div>
-                    <p>Server și client FTP scris integral în C, utilizând socket-uri TCP concurente și autentificare securizată bazată pe whitelist.</p>
+                    <p>Server și client FTP scris integral în C, utilizând socket-uri TCP concurente și autentificare
+                        securizată bazată pe whitelist.</p>
                     <div class="project-tags">
                         <span>C</span>
                         <span>TCP/IP Sockets</span>
@@ -236,7 +272,8 @@
                         <span class="project-category">Unity / VR</span>
                         <h3>FlightFearVR</h3>
                     </div>
-                    <p>Simulator VR imersiv dezvoltat în Unity, utilizat ca prototip terapeutic pentru desensibilizarea pacienților cu aviofobie.</p>
+                    <p>Simulator VR imersiv dezvoltat în Unity, utilizat ca prototip terapeutic pentru desensibilizarea
+                        pacienților cu aviofobie.</p>
                     <div class="project-tags">
                         <span>C#</span>
                         <span>Unity 3D</span>
@@ -252,7 +289,8 @@
                         <span class="project-category">Compiler Construction</span>
                         <h3>LFAC Custom Language</h3>
                     </div>
-                    <p>Compilator și interpret pentru un limbaj de programare proprietar, construit folosind instrumentele Flex și Bison în C.</p>
+                    <p>Compilator și interpret pentru un limbaj de programare proprietar, construit folosind
+                        instrumentele Flex și Bison în C.</p>
                     <div class="project-tags">
                         <span>C</span>
                         <span>Flex</span>
@@ -269,7 +307,8 @@
                         <span class="project-category">Social Platform / PHP</span>
                         <h3>SportIS (LocalGreetings)</h3>
                     </div>
-                    <p>Platformă socială bazată pe arhitectura MVC în PHP pentru descoperirea, crearea și înregistrarea activităților sportive locale.</p>
+                    <p>Platformă socială bazată pe arhitectura MVC în PHP pentru descoperirea, crearea și înregistrarea
+                        activităților sportive locale.</p>
                     <div class="project-tags">
                         <span>PHP</span>
                         <span>MVC</span>
@@ -286,7 +325,8 @@
                         <span class="project-category">Cloud / Full-Stack</span>
                         <h3>Cloud Computing Projects</h3>
                     </div>
-                    <p>TODO</p>
+                    <p>Colecție de aplicații web bazate pe microservicii și modele de cloud computing, cu frontend în
+                        Vue 3.</p>
                     <div class="project-tags">
                         <span>.NET Core</span>
                         <span>Vue 3</span>
@@ -301,9 +341,10 @@
                 <div class="project-card card-glass" data-project="tema-sapt4" data-categories="dotnet">
                     <div class="project-header-info">
                         <span class="project-category">Backend Architecture</span>
-                        <h3>Order Management API - TODO</h3>
+                        <h3>Order Management API</h3>
                     </div>
-                    <p>API minimal enterprise în .NET Core pentru procesarea comenzilor cu MediatR, FluentValidation și correlation tracking.</p>
+                    <p>API minimal enterprise în .NET Core pentru procesarea comenzilor cu MediatR, FluentValidation și
+                        correlation tracking.</p>
                     <div class="project-tags">
                         <span>.NET Core</span>
                         <span>MediatR</span>
@@ -313,9 +354,7 @@
                     <button class="btn btn-secondary btn-sm">Află mai multe</button>
                 </div>
             </div>
-        </section>v>
-                    <button class="btn btn-secondary btn-sm">Află mai multe</button>
-                </div>
+            </div>
             </div>
         </section>
 
@@ -328,7 +367,8 @@
             <div class="contact-grid">
                 <div class="contact-info card-glass">
                     <h3>Să păstrăm legătura</h3>
-                    <p>Sunt în căutare de noi oportunități profesionale. Mă puteți contacta pentru proiecte, joburi sau discuții tehnice prin:</p>
+                    <p>Sunt în căutare de noi oportunități profesionale. Mă puteți contacta pentru proiecte, joburi sau
+                        discuții tehnice prin:</p>
                     <div class="contact-details">
                         <div class="detail-item">
                             <span class="icon"><i class="fas fa-envelope"></i></span>
@@ -336,8 +376,10 @@
                         </div>
                     </div>
                     <div class="social-links">
-                        <a href="https://github.com/PetruGlt" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/PetruGlt" target="_blank" aria-label="GitHub"><i
+                                class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/petru-galateanu" target="_blank" aria-label="LinkedIn"><i
+                                class="fab fa-linkedin"></i></a>
                     </div>
                 </div>
                 <div class="contact-form card-glass">
@@ -354,7 +396,8 @@
                         </div>
                         <div class="form-group">
                             <label for="message">Mesaj</label>
-                            <textarea id="message" name="message" rows="5" placeholder="Mesajul tău..." required></textarea>
+                            <textarea id="message" name="message" rows="5" placeholder="Mesajul tău..."
+                                required></textarea>
                             <span class="error-msg">Mesajul nu poate fi gol</span>
                         </div>
                         <button type="submit" class="btn btn-primary btn-block">Trimite Mesaj</button>
@@ -368,7 +411,7 @@
     <footer>
         <div class="footer-container">
             <p>&copy; 2026 Petru Gălățeanu. Toate drepturile rezervate.</p>
-            <p class="footer-subtext">Portofoliu creat cu HTML5, CSS3 și JavaScript modern.</p>
+            <p class="footer-subtext">Portofoliu creat cu HTML5, CSS3, JS</p>
         </div>
     </footer>
 
@@ -376,15 +419,34 @@
     <dialog id="details-modal" closedby="any" aria-labelledby="modal-title">
         <div class="modal-wrapper">
             <button class="modal-close" id="modal-close-btn" aria-label="Închide dialogul">&times;</button>
-            <div class="modal-body">
-                <div id="modal-icon" class="modal-icon-header"></div>
-                <h2 id="modal-title">Titlu Proiect</h2>
-                <div class="modal-badge-container" id="modal-badges"></div>
-                <div class="modal-description" id="modal-desc">
-                    <!-- Dinamic content here -->
+            <div class="modal-grid">
+                <!-- Video Section (Left Column when video is present) -->
+                <div class="modal-video-section" id="modal-video-section">
+                    <h3 class="modal-video-title"><i class="fas fa-play-circle"></i> Demo Video</h3>
+                    <div class="video-container">
+                        <video id="modal-video" controls class="cyber-video-player" preload="metadata">
+                            <source id="modal-video-source" src="" type="video/mp4">
+                            Browserul tău nu suportă redarea video HTML5. Poți descărca fișierul <a href="#"
+                                id="modal-video-download-link" download>aici</a>.
+                        </video>
+                    </div>
+                    <p class="modal-video-caption" id="modal-video-caption">Vizualizează funcționalitățile principale
+                        ale aplicației în acțiune.</p>
                 </div>
-                <div class="modal-footer">
-                    <a href="#" id="modal-action-btn" class="btn btn-primary" target="_blank">Accesează Resursa</a>
+                <!-- Content Section (Right Column / Main content) -->
+                <div class="modal-content-section">
+                    <div class="modal-body">
+                        <div id="modal-icon" class="modal-icon-header"></div>
+                        <h2 id="modal-title">Titlu Proiect</h2>
+                        <div class="modal-badge-container" id="modal-badges"></div>
+                        <div class="modal-description" id="modal-desc">
+                            <!-- Dinamic content here -->
+                        </div>
+                        <div class="modal-footer">
+                            <a href="#" id="modal-action-btn" class="btn btn-primary" target="_blank">Accesează
+                                Resursa</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -392,8 +454,9 @@
 
     <!-- FontAwesome JS (Fallbacks) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+
     <!-- JS Script -->
     <script src="app.js"></script>
 </body>
+
 </html>
