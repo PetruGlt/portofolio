@@ -118,6 +118,18 @@ document.addEventListener('DOMContentLoaded', () => {
                 navMenu.classList.remove('active');
             });
         });
+
+        // Close menu on click outside
+        document.addEventListener('click', (e) => {
+            if (navMenu.classList.contains('active')) {
+                const isClickInsideMenu = navMenu.contains(e.target);
+                const isClickOnToggle = mobileToggle.contains(e.target);
+                if (!isClickInsideMenu && !isClickOnToggle) {
+                    mobileToggle.classList.remove('active');
+                    navMenu.classList.remove('active');
+                }
+            }
+        });
     }
 
     // 4. Fallback for CSS Scroll-Driven Animations
