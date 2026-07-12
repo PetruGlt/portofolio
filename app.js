@@ -546,31 +546,91 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 6. Contact Form validation & Submission
     const contactForm = document.getElementById('portfolio-contact-form');
+    
+    // Create and append toast container dynamically if not exists
+    let toastContainer = document.getElementById('toast-container');
+    if (!toastContainer) {
+        toastContainer = document.createElement('div');
+        toastContainer.className = 'toast-container';
+        toastContainer.id = 'toast-container';
+        document.body.appendChild(toastContainer);
+    }
+
+    const showToast = (title, text, type = 'success') => {
+        const toast = document.createElement('div');
+        toast.className = `toast toast-${type}`;
+        
+        const iconHtml = type === 'success' 
+            ? '<i class="fas fa-check-circle"></i>' 
+            : '<i class="fas fa-exclamation-circle"></i>';
+            
+        toast.innerHTML = `
+            <div class="toast-icon">${iconHtml}</div>
+            <div class="toast-content">
+                <h4>${title}</h4>
+                <p>${text}</p>
+            </div>
+        `;
+        
+        toastContainer.appendChild(toast);
+        
+        // Trigger reflow for animation
+        setTimeout(() => toast.classList.add('show'), 10);
+        
+        // Auto remove
+        setTimeout(() => {
+            toast.classList.remove('show');
+            setTimeout(() => toast.remove(), 400);
+        }, 4000);
+    };
+
     if (contactForm) {
         contactForm.addEventListener('submit', (e) => {
             e.preventDefault();
 
-            // Check form validity using modern HTML5 validation
+            // Clear previous validation styling
+            contactForm.classList.remove('was-validated');
+
             let isValid = true;
             const inputs = contactForm.querySelectorAll('input, textarea');
 
             inputs.forEach(input => {
-                // Trigger validity check styling by setting pseudo state or checking manually
                 if (!input.checkValidity()) {
                     isValid = false;
                 }
             });
 
             if (isValid) {
-                // Construct feedback
-                const name = document.getElementById('name').value;
-                alert(`Mulțumim, ${name}! Mesajul tău a fost transmis cu succes (simulat).`);
+                const nameVal = document.getElementById('name').value;
+                const emailVal = document.getElementById('email').value;
+                const messageVal = document.getElementById('message').value;
+
+                // Construct mailto link
+                const subject = `Contact Portofoliu - ${nameVal}`;
+                const body = `Salut Petru,\n\nNume: ${nameVal}\nEmail de contact: ${emailVal}\n\nMesaj:\n${messageVal}`;
+                const mailtoUrl = `mailto:galteanupetru152@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+                // Redirect to open native mail application
+                window.location.href = mailtoUrl;
+
+                // Show success toast
+                showToast('Client Email', 'Deschidem clientul tău de e-mail pentru a trimite mesajul...', 'success');
+
+                // Reset form
                 contactForm.reset();
             } else {
-                // Focus on the first invalid field
+                // Mark form as validated to show standard validation messages
+                contactForm.classList.add('was-validated');
+                
+                // Show error toast
+                showToast('Eroare', 'Te rugăm să completezi corect toate câmpurile obligatorii.', 'error');
+
+                // Focus on first invalid input
                 const firstInvalid = contactForm.querySelector(':invalid');
                 if (firstInvalid) firstInvalid.focus();
             }
         });
     }
 });
+
+
