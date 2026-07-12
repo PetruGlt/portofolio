@@ -286,23 +286,42 @@ document.addEventListener('DOMContentLoaded', () => {
             actionUrl: 'https://github.com/PetruGlt/LocalGreetings',
             actionText: 'Vezi pe GitHub'
         },
-        'cloud-computing': {
-            icon: '<i class="fas fa-cloud"></i>',
-            title: 'Proiect: Cloud Computing Labs & Apps',
-            badges: ['Cloud Architecture', '.NET Core', 'Vue 3', 'Node.js', 'Vite'],
-            videoUrl: 'Projects/cloud-computing.mp4',
+        collabstudy: {
+            icon: '<i class="fas fa-graduation-cap"></i>',
+            title: 'Proiect: CollabStudy — Platformă Educațională AI',
+            badges: ['Cloud / Microservices', 'Python (Flask)', 'Vue 3', 'Azure Blob', 'SQL Server', 'Azure OpenAI'],
+            videoUrl: 'Projects/collabstudy.mp4',
             desc: `
-                <p>O colecție de aplicații web destinate demonstrării utilizării modelelor cloud și a microserviciilor, incluzând API-uri REST performante și un client web reactiv în Vue.js.</p>
-                <strong>Tehnologii utilizate:</strong> .NET Core API, Vue 3, Vite, Node.js, Express, Postman Collection.
+                <p>CollabStudy este o platformă distribuită destinată studenților pentru managementul documentelor de studiu și generarea automată de materiale auxiliare de învățare bazate pe inteligență artificială.</p>
+                <strong>Tehnologii utilizate:</strong> Python (Flask), Vue 3, Vite, Azure Blob Storage (Azurite), SQL Server (MSSQL), Azure Service Bus (sau HTTP bypass local), Azure OpenAI, Azure Document Intelligence.
                 <strong>Competențe dezvoltate:</strong>
                 <ul>
-                    <li>Utilizarea metodelor moderne de integrare frontend-backend (Vue 3 client conectat la .NET API).</li>
-                    <li>Dezvoltarea de micro-servicii REST în Node.js cu Express pentru rutări dinamice.</li>
-                    <li>Configurarea mediilor de dezvoltare rapidă folosind Vite.</li>
-                    <li>Testarea și simularea încărcării API-urilor prin intermediul colecțiilor Postman automate.</li>
+                    <li>Dezvoltarea unei arhitecturi bazate pe microservicii decuplate prin mesagerie asincronă sau API-uri REST directe.</li>
+                    <li>Integrarea serviciilor cognitive Azure pentru procesarea inteligentă a documentelor (Document Intelligence pentru extragere PDF și OpenAI pentru generare de rezumate și quiz-uri).</li>
+                    <li>Gestiunea robustă a stocării binare în Azure Blob Storage (Azurite local).</li>
+                    <li>Configurarea și gestiunea bazelor de date SQL Server cu relații complexe între utilizatori, documente, întrebări și răspunsuri.</li>
                 </ul>
             `,
-            actionUrl: 'https://github.com/PetruGlt/CloudComputingCourse',
+            actionUrl: 'https://github.com/PetruGlt/CollabStudy',
+            actionText: 'Vezi pe GitHub'
+        },
+        'image-resizer': {
+            icon: '<i class="fas fa-images"></i>',
+            title: 'Proiect: PhotoResizer — Microserviciu Serverless',
+            badges: ['Cloud / Serverless', 'Python', 'Flask', 'GCP Functions', 'Cloud Storage', 'Firestore'],
+            videoUrl: 'Projects/image-resizer.mp4',
+            desc: `
+                <p>Un sistem de procesare asincronă de imagini bazat pe modelul de computație Serverless. Permite utilizatorilor să încarce imagini, care sunt procesate la rezoluții multiple în background și stocate securizat.</p>
+                <strong>Tehnologii utilizate:</strong> Python, Flask, Google Cloud Functions (Functions Framework), Google Cloud Storage, Firestore (pentru stocarea metadatelor), Authlib (Google OAuth2).
+                <strong>Competențe dezvoltate:</strong>
+                <ul>
+                    <li>Dezvoltarea de funcții serverless decuplate pentru manipularea asincronă a resurselor media mari folosind Pillow.</li>
+                    <li>Modelarea unei baze de date NoSQL în Cloud Firestore pentru salvarea stării și a rezoluțiilor disponibile.</li>
+                    <li>Integrarea autentificării securizate Google OAuth 2.0 pentru managementul sesiunilor de utilizator.</li>
+                    <li>Stocarea fișierelor binare în Google Cloud Storage (cu emulator local pentru testare locală rapidă).</li>
+                </ul>
+            `,
+            actionUrl: 'https://github.com/PetruGlt/CloudComputing/tree/main/tema3',
             actionText: 'Vezi pe GitHub'
         },
         'tema-sapt4': {
@@ -322,6 +341,64 @@ document.addEventListener('DOMContentLoaded', () => {
                 </ul>
             `,
             actionUrl: 'https://github.com/PetruGlt/TemaSapt4',
+            actionText: 'Vezi pe GitHub'
+        },
+        'homework2-dashboard': {
+            icon: '<i class="fas fa-chart-line"></i>',
+            title: 'Proiect: Real-Time Aggregator Dashboard',
+            badges: ['Full-Stack', '.NET 10', 'Vue 3', 'Node.js / Express', 'SQLite', 'REST Integration'],
+            videoUrl: 'Projects/homework2-dashboard.mp4',
+            desc: `
+                <p>O platformă completă de agregare a datelor în timp real din multiple surse externe și locale, proiectată pentru a demonstra integrarea de servicii web eterogene.</p>
+                <strong>Tehnologii utilizate:</strong> .NET 10 (Web API principal), Vue 3 (frontend client), Node.js/Express (microserviciu local de rețete cu PostgreSQL), SQLite (înregistrarea logurilor de sistem), HttpClient, CORS Policy.
+                <strong>Competențe dezvoltate:</strong>
+                <ul>
+                    <li>Dezvoltarea de API-uri agregate prin consumarea de servicii web REST terțe în paralel utilizând <code>HttpClientFactory</code>.</li>
+                    <li>Utilizarea conceptelor din .NET 10 pentru configurarea politicilor CORS permisive și securizate pentru comunicarea cu clientul Vue 3.</li>
+                    <li>Managementul securizat al cheilor API (OpenWeather și NewsAPI) utilizând fișiere <code>.env</code> prin intermediul bibliotecii dotenv.net.</li>
+                    <li>Persistența istorică a cererilor (logging) direct într-o bază de date SQLite prin intermediul Entity Framework Core.</li>
+                </ul>
+            `,
+            actionUrl: 'https://github.com/PetruGlt/CloudComputingCourse/tree/main/homework2',
+            actionText: 'Vezi pe GitHub'
+        },
+        dotgame: {
+            icon: '<i class="fas fa-gamepad"></i>',
+            title: 'Proiect: DotGame — Joc Desktop bazat pe Teoria Grafurilor',
+            badges: ['Desktop App', 'Java', 'Swing & AWT', 'Graph Theory', 'Kruskal MST', 'graph4j'],
+            videoUrl: 'Projects/dotgame.mp4',
+            desc: `
+                <p>O aplicație desktop interactivă dezvoltată în Java pentru simularea unui joc pozițional de conexiune pe grafuri. Jocul compară în timp real mutările jucătorilor cu arborele parțial de cost minim.</p>
+                <strong>Tehnologii utilizate:</strong> Java, Swing (GUI), AWT Graphics 2D, biblioteca graph4j, algoritmul Kruskal Minimum Spanning Tree (MST), Serializare Java.
+                <strong>Competențe dezvoltate:</strong>
+                <ul>
+                    <li>Implementarea de interfețe grafice interactive de tip canvas utilizând <code>Graphics2D</code> și gestiunea dinamică a evenimentelor de mouse (<code>MouseAdapter</code>).</li>
+                    <li>Utilizarea conceptelor matematice avansate (Teoria Grafurilor) în dezvoltarea logicii de joc.</li>
+                    <li>Integrarea bibliotecii externe <code>graph4j</code> pentru reprezentarea eficientă a nodurilor și a muchiilor ponderate pe baza distanțelor euclidiene.</li>
+                    <li>Aplicarea algoritmului Kruskal pentru determinarea arborelui de acoperire minimă (MST) și calcularea scorului optim în timp real.</li>
+                    <li>Serializarea stării jocului pentru salvare și restaurare locală.</li>
+                </ul>
+            `,
+            actionUrl: 'https://github.com/PetruGlt/workJava/tree/main/DotGame',
+            actionText: 'Vezi pe GitHub'
+        },
+        'concurrency-scrabble': {
+            icon: '<i class="fas fa-project-diagram"></i>',
+            title: 'Proiect: Concurrent Scrabble Simulator',
+            badges: ['Concurrency', 'Java', 'Multithreading', 'System Synchronization'],
+            videoUrl: 'Projects/scrabble-sim.mp4',
+            desc: `
+                <p>O simulare complexă în Java a unui joc de Scrabble bazat pe execuție concurentă, concepută pentru a demonstra managementul concurenței și sincronizarea proceselor la nivel de memorie partajată.</p>
+                <strong>Tehnologii utilizate:</strong> Java SE, Multithreading (Threads & Runnable), Thread Synchronization (synchronized blocks, wait/notify, lock objects).
+                <strong>Competențe dezvoltate:</strong>
+                <ul>
+                    <li>Arhitecturarea unui flux de execuție paralel unde fiecare jucător rulează ca un thread de sine stătător.</li>
+                    <li>Sincronizarea sigură a accesului la resurse critice partajate, cum ar fi sacul de jetoane (<code>TileBag</code>) și tabla de joc (<code>Board</code>), pentru a evita race conditions.</li>
+                    <li>Implementarea unui arbitru virtual de joc capabil să valideze cuvintele adăugate concurent dintr-un dicționar pre-încărcat.</li>
+                    <li>Controlul ciclului de viață al firelor de execuție, gestiunea stărilor acestora și finalizarea corectă a jocului în condiții de siguranță.</li>
+                </ul>
+            `,
+            actionUrl: 'https://github.com/PetruGlt/workJava/tree/main/Lab7-fin',
             actionText: 'Vezi pe GitHub'
         }
     };
