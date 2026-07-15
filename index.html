@@ -21,6 +21,9 @@
 
     <!-- FontAwesome for Icons -->
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+    <!-- Devicon for Tech Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 </head>
 
 <body>
@@ -154,13 +157,18 @@
                         pentru scanarea și logarea rapidă a alimentelor în cămară de către alți utilizatori.
                     </p>
                     <div class="licenta-features">
-                        <div class="feature-item"><i class="fas fa-check-circle"></i> <span data-i18n="kalo.f1">Gateway Nginx centralizat</span></div>
-                        <div class="feature-item"><i class="fas fa-check-circle"></i> <span data-i18n="kalo.f2">Autentificare securizată cu JWT partajat</span></div>
-                        <div class="feature-item"><i class="fas fa-check-circle"></i> <span data-i18n="kalo.f3">Database seeding & migrații automate</span></div>
-                        <div class="feature-item"><i class="fas fa-check-circle"></i> <span data-i18n="kalo.f4">Inteligență Artificială (FastAPI AI routes)</span></div>
+                        <div class="feature-item"><i class="fas fa-check-circle"></i> <span data-i18n="kalo.f1">Gateway
+                                Nginx centralizat</span></div>
+                        <div class="feature-item"><i class="fas fa-check-circle"></i> <span
+                                data-i18n="kalo.f2">Autentificare securizată cu JWT partajat</span></div>
+                        <div class="feature-item"><i class="fas fa-check-circle"></i> <span data-i18n="kalo.f3">Database
+                                seeding & migrații automate</span></div>
+                        <div class="feature-item"><i class="fas fa-check-circle"></i> <span
+                                data-i18n="kalo.f4">Inteligență Artificială (FastAPI AI routes)</span></div>
                     </div>
                     <div class="licenta-actions">
-                        <a href="Kalo.pdf" class="btn btn-primary" download><i class="fas fa-file-pdf"></i> <span data-i18n="kalo.btnPresentation">Prezentare</span>
+                        <a href="Kalo.pdf" class="btn btn-primary" download><i class="fas fa-file-pdf"></i> <span
+                                data-i18n="kalo.btnPresentation">Prezentare</span>
                         </a>
                         <a href="https://github.com/PetruGlt/Kalo" target="_blank" class="btn btn-secondary"><i
                                 class="fab fa-github"></i> <span data-i18n="kalo.btnCode">Cod</span></a>
@@ -172,12 +180,173 @@
                     <div class="video-container">
                         <video controls poster="" class="cyber-video-player">
                             <source src="ProiectDemo4.mp4" type="video/mp4">
-                            <span data-i18n="video.fallback">Browserul tău nu suportă redarea video HTML5. Poți descărca fișierul</span> <a
-                                href="ProiectDemo4.mp4" data-i18n="video.here">aici</a>.
+                            <span data-i18n="video.fallback">Browserul tău nu suportă redarea video HTML5. Poți descărca
+                                fișierul</span> <a href="ProiectDemo4.mp4" data-i18n="video.here">aici</a>.
                         </video>
                     </div>
-                    <p class="video-caption" data-i18n="kalo.videoCaption">Demonstrația practică a fluxurilor de utilizator, scanarea NFC și
+                    <p class="video-caption" data-i18n="kalo.videoCaption">Demonstrația practică a fluxurilor de
+                        utilizator, scanarea NFC și
                         recomandările nutriționale bazate pe inteligență artificială.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section-container">
+            <div class="section-header">
+                <h2 class="section-title" data-i18n="skills.title">Competențe</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="skills-category">
+                <h3 class="skills-cat-title" data-i18n="skills.languages">
+                    <i class="fas fa-code"></i> Limbaje de Programare
+                </h3>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="devicon-java-plain colored"></i>
+                        </div>
+                        <span class="skill-name">Java</span>
+                        <span class="skill-tag tag-advanced" data-i18n="skill.tag.advanced">Avansat</span>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="devicon-csharp-plain colored"></i>
+                        </div>
+                        <span class="skill-name">C# / .NET</span>
+                        <span class="skill-tag tag-advanced" data-i18n="skill.tag.advanced">Avansat</span>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="devicon-python-plain colored"></i>
+                        </div>
+                        <span class="skill-name">Python</span>
+                        <span class="skill-tag tag-intermediate" data-i18n="skill.tag.intermediate">Intermediar</span>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="devicon-cplusplus-plain colored"></i>
+                        </div>
+                        <span class="skill-name">C / C++</span>
+                        <span class="skill-tag tag-intermediate" data-i18n="skill.tag.intermediate">Intermediar</span>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-database" style="color: #00e5ff;"></i>
+                        </div>
+                        <span class="skill-name">SQL</span>
+                        <span class="skill-tag tag-advanced" data-i18n="skill.tag.advanced">Avansat</span>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="devicon-bash-plain" style="color: #00ff66;"></i>
+                        </div>
+                        <span class="skill-name">Bash / Linux</span>
+                        <span class="skill-tag tag-intermediate" data-i18n="skill.tag.intermediate">Intermediar</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Frameworks -->
+            <div class="skills-category">
+                <h3 class="skills-cat-title" data-i18n="skills.frameworks">
+                    <i class="fas fa-layer-group"></i> Frameworks & Librării
+                </h3>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="devicon-spring-original colored"></i>
+                        </div>
+                        <span class="skill-name">Spring Boot</span>
+                        <span class="skill-tag tag-intermediate" data-i18n="skill.tag.intermediate">Intermediar</span>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="devicon-dotnetcore-plain colored"></i>
+                        </div>
+                        <span class="skill-name">.NET / ASP.NET</span>
+                        <span class="skill-tag tag-advanced" data-i18n="skill.tag.advanced">Avansat</span>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-flask" style="color: #f0f3f8;"></i>
+                        </div>
+                        <span class="skill-name">Flask</span>
+                        <span class="skill-tag tag-intermediate" data-i18n="skill.tag.intermediate">Intermediar</span>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="devicon-vuejs-plain colored"></i>
+                        </div>
+                        <span class="skill-name">Vue 3</span>
+                        <span class="skill-tag tag-intermediate" data-i18n="skill.tag.intermediate">Intermediar</span>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="devicon-unity-plain" style="color: #f0f3f8;"></i>
+                        </div>
+                        <span class="skill-name">Unity 3D</span>
+                        <span class="skill-tag tag-beginner" data-i18n="skill.tag.beginner">Începător</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tools & Cloud -->
+            <div class="skills-category">
+                <h3 class="skills-cat-title" data-i18n="skills.tools">
+                    <i class="fas fa-tools"></i> Tools & Cloud
+                </h3>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="devicon-git-plain colored"></i>
+                        </div>
+                        <span class="skill-name">Git / GitHub</span>
+                        <span class="skill-tag tag-advanced" data-i18n="skill.tag.advanced">Avansat</span>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="devicon-docker-plain colored"></i>
+                        </div>
+                        <span class="skill-name">Docker</span>
+                        <span class="skill-tag tag-intermediate" data-i18n="skill.tag.intermediate">Intermediar</span>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="devicon-azure-plain colored"></i>
+                        </div>
+                        <span class="skill-name">Azure</span>
+                        <span class="skill-tag tag-beginner" data-i18n="skill.tag.beginner">Începător</span>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="devicon-googlecloud-plain colored"></i>
+                        </div>
+                        <span class="skill-name">GCP</span>
+                        <span class="skill-tag tag-beginner" data-i18n="skill.tag.beginner">Începător</span>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-network-wired" style="color: #00e5ff;"></i>
+                        </div>
+                        <span class="skill-name">REST APIs</span>
+                        <span class="skill-tag tag-advanced" data-i18n="skill.tag.advanced">Avansat</span>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-cubes" style="color: #7000ff;"></i>
+                        </div>
+                        <span class="skill-name">Microservices</span>
+                        <span class="skill-tag tag-intermediate" data-i18n="skill.tag.intermediate">Intermediar</span>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-infinity" style="color: #00ff66;"></i>
+                        </div>
+                        <span class="skill-name">CI / CD</span>
+                        <span class="skill-tag tag-beginner" data-i18n="skill.tag.beginner">Începător</span>
+                    </div>
                 </div>
             </div>
         </section>
@@ -201,12 +370,15 @@
 
             <div class="projects-grid">
                 <!-- CampusEats -->
-                <div class="project-card card-glass" data-project="campuseats" data-categories="dotnet web" data-team="4">
+                <div class="project-card card-glass" data-project="campuseats" data-categories="dotnet web"
+                    data-team="4">
                     <div class="project-header-info">
                         <span class="project-category">Full-Stack / .NET 8</span>
                         <h3>CampusEats</h3>
                     </div>
-                    <p data-i18n="proj.campuseats.desc">Sistem modular de comenzi pentru cantine universitare, implementat folosind Vertical Slice Architecture, CQRS cu MediatR și interfață SPA în Blazor WASM.</p>
+                    <p data-i18n="proj.campuseats.desc">Sistem modular de comenzi pentru cantine universitare,
+                        implementat folosind Vertical Slice Architecture, CQRS cu MediatR și interfață SPA în Blazor
+                        WASM.</p>
                     <div class="project-tags">
                         <span>.NET 8</span>
                         <span>Blazor WASM</span>
@@ -218,12 +390,14 @@
                 </div>
 
                 <!-- StatesOfTheWorld -->
-                <div class="project-card card-glass" data-project="states-of-the-world" data-categories="python" data-team="1">
+                <div class="project-card card-glass" data-project="states-of-the-world" data-categories="python"
+                    data-team="1">
                     <div class="project-header-info">
                         <span class="project-category">Web Crawler & API</span>
                         <h3>States of the World</h3>
                     </div>
-                    <p data-i18n="proj.states.desc">Web crawler automat pentru date geografice globale folosind BeautifulSoup, stocare SQLite normalizată și REST API auto-documentat cu Swagger.</p>
+                    <p data-i18n="proj.states.desc">Web crawler automat pentru date geografice globale folosind
+                        BeautifulSoup, stocare SQLite normalizată și REST API auto-documentat cu Swagger.</p>
                     <div class="project-tags">
                         <span>Python 3</span>
                         <span>Flask</span>
@@ -240,7 +414,8 @@
                         <span class="project-category">Multi-service Backend</span>
                         <h3 data-i18n="proj.chatbot.name">Chatbot Bancar</h3>
                     </div>
-                    <p data-i18n="proj.chatbot.desc">Sistem asistent distribuit compus dintr-un nucleu bancar robust în Spring Boot și un modul conversațional în NestJS interconectat cu Prisma ORM.</p>
+                    <p data-i18n="proj.chatbot.desc">Sistem asistent distribuit compus dintr-un nucleu bancar robust în
+                        Spring Boot și un modul conversațional în NestJS interconectat cu Prisma ORM.</p>
                     <div class="project-tags">
                         <span>Java</span>
                         <span>Spring Boot</span>
@@ -257,7 +432,8 @@
                         <span class="project-category">System Programming</span>
                         <h3>Custom FTP Server</h3>
                     </div>
-                    <p data-i18n="proj.ftp.desc">Server și client de transfer fișiere la nivel de sistem UNIX în C, bazat pe procese concurente fork(), socket-uri TCP și securitate cu whitelist.</p>
+                    <p data-i18n="proj.ftp.desc">Server și client de transfer fișiere la nivel de sistem UNIX în C,
+                        bazat pe procese concurente fork(), socket-uri TCP și securitate cu whitelist.</p>
                     <div class="project-tags">
                         <span>C</span>
                         <span>TCP/IP Sockets</span>
@@ -268,12 +444,14 @@
                 </div>
 
                 <!-- FlightFearVR -->
-                <div class="project-card card-glass" data-project="flight-fear-vr" data-categories="c-cpp" data-team="3">
+                <div class="project-card card-glass" data-project="flight-fear-vr" data-categories="c-cpp"
+                    data-team="3">
                     <div class="project-header-info">
                         <span class="project-category">Unity / VR</span>
                         <h3>FlightFearVR</h3>
                     </div>
-                    <p data-i18n="proj.vr.desc">Simulator VR imersiv terapeutic în Unity 3D și C# (OpenXR) pentru expunerea controlată și desensibilizarea pacienților cu aviofobie.</p>
+                    <p data-i18n="proj.vr.desc">Simulator VR imersiv terapeutic în Unity 3D și C# (OpenXR) pentru
+                        expunerea controlată și desensibilizarea pacienților cu aviofobie.</p>
                     <div class="project-tags">
                         <span>C#</span>
                         <span>Unity 3D</span>
@@ -289,7 +467,8 @@
                         <span class="project-category">Compiler Construction</span>
                         <h3>Custom Language</h3>
                     </div>
-                    <p data-i18n="proj.compiler.desc">Compilator și interpret pentru un limbaj proprietar în C, folosind Flex pentru analiză lexicală, Bison pentru parsare sintactică și generare de AST.</p>
+                    <p data-i18n="proj.compiler.desc">Compilator și interpret pentru un limbaj proprietar în C, folosind
+                        Flex pentru analiză lexicală, Bison pentru parsare sintactică și generare de AST.</p>
                     <div class="project-tags">
                         <span>C</span>
                         <span>Flex</span>
@@ -306,7 +485,8 @@
                         <span class="project-category">Social Platform / PHP</span>
                         <h3 data-i18n="proj.sportis.name">SportIS - Platformă socială sportivă</h3>
                     </div>
-                    <p data-i18n="proj.sportis.desc">Platformă socială MVC în PHP pentru organizarea de activități sportive locale, securizată nativ contra XSS/SQLi și documentată cu modelul C4.</p>
+                    <p data-i18n="proj.sportis.desc">Platformă socială MVC în PHP pentru organizarea de activități
+                        sportive locale, securizată nativ contra XSS/SQLi și documentată cu modelul C4.</p>
                     <div class="project-tags">
                         <span>PHP</span>
                         <span>MVC</span>
@@ -318,12 +498,14 @@
                 </div>
 
                 <!-- CollabStudy -->
-                <div class="project-card card-glass" data-project="collabstudy" data-categories="python web" data-team="2">
+                <div class="project-card card-glass" data-project="collabstudy" data-categories="python web"
+                    data-team="2">
                     <div class="project-header-info">
                         <span class="project-category">Cloud / Microservices</span>
                         <h3>CollabStudy</h3>
                     </div>
-                    <p data-i18n="proj.collab.desc">Platformă educațională distribuită bazată pe microservicii în Python (Flask) și Vue 3, ce folosește AI pentru generarea de rezumate și quiz-uri.</p>
+                    <p data-i18n="proj.collab.desc">Platformă educațională distribuită bazată pe microservicii în Python
+                        (Flask) și Vue 3, ce folosește AI pentru generarea de rezumate și quiz-uri.</p>
                     <div class="project-tags">
                         <span>Python (Flask)</span>
                         <span>Vue 3</span>
@@ -335,12 +517,14 @@
                 </div>
 
                 <!-- ImageResizer -->
-                <div class="project-card card-glass" data-project="image-resizer" data-categories="python web" data-team="2">
+                <div class="project-card card-glass" data-project="image-resizer" data-categories="python web"
+                    data-team="2">
                     <div class="project-header-info">
                         <span class="project-category">Cloud / Serverless</span>
                         <h3>PhotoResizer</h3>
                     </div>
-                    <p data-i18n="proj.resizer.desc">Sistem serverless de procesare asincronă a imaginilor la rezoluții multiple, folosind GCP Cloud Functions și Firestore.</p>
+                    <p data-i18n="proj.resizer.desc">Sistem serverless de procesare asincronă a imaginilor la rezoluții
+                        multiple, folosind GCP Cloud Functions și Firestore.</p>
                     <div class="project-tags">
                         <span>Python</span>
                         <span>Flask</span>
@@ -357,7 +541,8 @@
                         <span class="project-category">Backend Architecture</span>
                         <h3>Order Management API</h3>
                     </div>
-                    <p data-i18n="proj.order.desc">API minimal enterprise în .NET Core pentru procesarea comenzilor cu MediatR, FluentValidation și
+                    <p data-i18n="proj.order.desc">API minimal enterprise în .NET Core pentru procesarea comenzilor cu
+                        MediatR, FluentValidation și
                         correlation tracking.</p>
                     <div class="project-tags">
                         <span>.NET Core</span>
@@ -369,12 +554,14 @@
                 </div>
 
                 <!-- Homework2 (Real-Time Dashboard) -->
-                <div class="project-card card-glass" data-project="homework2-dashboard" data-categories="dotnet web" data-team="1">
+                <div class="project-card card-glass" data-project="homework2-dashboard" data-categories="dotnet web"
+                    data-team="1">
                     <div class="project-header-info">
                         <span class="project-category">Full-Stack / .NET 10</span>
                         <h3>Real-Time Aggregator Dashboard</h3>
                     </div>
-                    <p data-i18n="proj.dashboard.desc">Dashboard interactiv combinând servicii de rețete Node.js locale, prognoze meteo OpenWeather și știri NewsAPI într-un backend .NET 10 securizat.</p>
+                    <p data-i18n="proj.dashboard.desc">Dashboard interactiv combinând servicii de rețete Node.js locale,
+                        prognoze meteo OpenWeather și știri NewsAPI într-un backend .NET 10 securizat.</p>
                     <div class="project-tags">
                         <span>.NET 10</span>
                         <span>Vue 3</span>
@@ -391,7 +578,9 @@
                         <span class="project-category">Java / Swing & Graph Theory</span>
                         <h3>DotGame</h3>
                     </div>
-                    <p data-i18n="proj.dotgame.desc">Joc desktop interactiv bazat pe Teoria Grafurilor în Java Swing, ce calculează în timp real scorul optim al mutărilor folosind algoritmul Kruskal MST din biblioteca graph4j.</p>
+                    <p data-i18n="proj.dotgame.desc">Joc desktop interactiv bazat pe Teoria Grafurilor în Java Swing, ce
+                        calculează în timp real scorul optim al mutărilor folosind algoritmul Kruskal MST din biblioteca
+                        graph4j.</p>
                     <div class="project-tags">
                         <span>Java</span>
                         <span>Swing / AWT</span>
@@ -402,12 +591,14 @@
                 </div>
 
                 <!-- ConcurrencyScrabble -->
-                <div class="project-card card-glass" data-project="concurrency-scrabble" data-categories="java" data-team="1">
+                <div class="project-card card-glass" data-project="concurrency-scrabble" data-categories="java"
+                    data-team="1">
                     <div class="project-header-info">
                         <span class="project-category">Java Concurrency Sim</span>
                         <h3>Concurrent Scrabble Simulator</h3>
                     </div>
-                    <p data-i18n="proj.scrabble.desc">Simulare multi-thread în Java a unui joc de Scrabble, demonstrând sincronizarea resurselor partajate (TileBag, Board) între jucători concurenți.</p>
+                    <p data-i18n="proj.scrabble.desc">Simulare multi-thread în Java a unui joc de Scrabble, demonstrând
+                        sincronizarea resurselor partajate (TileBag, Board) între jucători concurenți.</p>
                     <div class="project-tags">
                         <span>Java</span>
                         <span>Multithreading</span>
@@ -423,7 +614,8 @@
                         <span class="project-category">Java OOP & Serialization</span>
                         <h3>DocManager CLI Engine</h3>
                     </div>
-                    <p data-i18n="proj.docmanager.desc">Catalog modular de documente în Java utilizând Command Pattern, cu mecanisme abstracte de persistență (JSON, Binar și Text) și gestionare a fișierelor.</p>
+                    <p data-i18n="proj.docmanager.desc">Catalog modular de documente în Java utilizând Command Pattern,
+                        cu mecanisme abstracte de persistență (JSON, Binar și Text) și gestionare a fișierelor.</p>
                     <div class="project-tags">
                         <span>Java</span>
                         <span>Design Patterns</span>
@@ -434,12 +626,14 @@
                 </div>
 
                 <!-- JavaDbIntegrations -->
-                <div class="project-card card-glass" data-project="java-db-integrations" data-categories="java" data-team="1">
+                <div class="project-card card-glass" data-project="java-db-integrations" data-categories="java"
+                    data-team="1">
                     <div class="project-header-info">
                         <span class="project-category">Java / Databases & JPA</span>
                         <h3>Java DB Integrations</h3>
                     </div>
-                    <p data-i18n="proj.javadb.desc">Colecție de servicii Java pentru persistența datelor, integrând conexiuni JDBC custom cu DAO Pattern, importatoare CSV și repo-uri JPA/Hibernate.</p>
+                    <p data-i18n="proj.javadb.desc">Colecție de servicii Java pentru persistența datelor, integrând
+                        conexiuni JDBC custom cu DAO Pattern, importatoare CSV și repo-uri JPA/Hibernate.</p>
                     <div class="project-tags">
                         <span>Java</span>
                         <span>JDBC</span>
@@ -465,7 +659,8 @@
             <div class="contact-grid">
                 <div class="contact-info card-glass">
                     <h3 data-i18n="contact.title">Să păstrăm legătura</h3>
-                    <p data-i18n="contact.desc">Sunt în căutare de noi oportunități profesionale. Mă puteți contacta pentru proiecte, joburi sau
+                    <p data-i18n="contact.desc">Sunt în căutare de noi oportunități profesionale. Mă puteți contacta
+                        pentru proiecte, joburi sau
                         discuții tehnice prin:</p>
                     <div class="contact-details">
                         <div class="detail-item">
@@ -484,21 +679,25 @@
                     <form id="portfolio-contact-form" novalidate>
                         <div class="form-group">
                             <label for="name" data-i18n="contact.form.name">Nume</label>
-                            <input type="text" id="name" name="name" data-i18n-placeholder="contact.form.namePh" placeholder="Nume" required>
+                            <input type="text" id="name" name="name" data-i18n-placeholder="contact.form.namePh"
+                                placeholder="Nume" required>
                             <span class="error-msg" data-i18n="contact.form.nameErr">Camp obligatoriu!</span>
                         </div>
                         <div class="form-group">
                             <label for="email" data-i18n="contact.form.email">Adresă de email</label>
                             <input type="email" id="email" name="email" placeholder="email@exemplu.com" required>
-                            <span class="error-msg" data-i18n="contact.form.emailErr">Introdu o adresă de email validă</span>
+                            <span class="error-msg" data-i18n="contact.form.emailErr">Introdu o adresă de email
+                                validă</span>
                         </div>
                         <div class="form-group">
                             <label for="message" data-i18n="contact.form.message">Mesaj</label>
-                            <textarea id="message" name="message" rows="5" data-i18n-placeholder="contact.form.messagePh" placeholder="Mesajul tău..."
+                            <textarea id="message" name="message" rows="5"
+                                data-i18n-placeholder="contact.form.messagePh" placeholder="Mesajul tău..."
                                 required></textarea>
                             <span class="error-msg" data-i18n="contact.form.messageErr">Mesajul nu poate fi gol</span>
                         </div>
-                        <button type="submit" class="btn btn-primary btn-block" data-i18n="contact.form.submit">Trimite Mesaj</button>
+                        <button type="submit" class="btn btn-primary btn-block" data-i18n="contact.form.submit">Trimite
+                            Mesaj</button>
                     </form>
                 </div>
             </div>

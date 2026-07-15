@@ -612,6 +612,128 @@ a {
 }
 
 /* ==========================================================================
+   SKILLS SECTION
+   ========================================================================== */
+.skills-category {
+    margin-bottom: 3rem;
+}
+.skills-cat-title {
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--text-muted);
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+.skills-cat-title i {
+    color: var(--accent-cyan);
+    font-size: 0.9rem;
+}
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    gap: 1rem;
+}
+.skill-card {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 1.25rem 0.75rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6rem;
+    cursor: default;
+    transition: var(--transition-smooth);
+    position: relative;
+    overflow: hidden;
+}
+.skill-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(0,229,255,0.04), transparent);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.skill-card:hover {
+    border-color: rgba(0, 229, 255, 0.35);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3), var(--glow-cyan);
+}
+.skill-card:hover::before {
+    opacity: 1;
+}
+.skill-icon {
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.04);
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+}
+.skill-card:hover .skill-icon {
+    transform: scale(1.1);
+}
+.skill-svg {
+    width: 36px;
+    height: 36px;
+}
+.skill-icon i {
+    font-size: 2.2rem;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Text-only icon fallback (SQL, Bash, etc.) */
+.skill-text-icon {
+    font-family: var(--font-mono);
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+}
+.skill-name {
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    text-align: center;
+    line-height: 1.2;
+}
+/* Level tag */
+.skill-tag {
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    font-weight: 500;
+    padding: 0.15rem 0.5rem;
+    border-radius: 20px;
+    letter-spacing: 0.5px;
+    /* Beginner default – muted */
+    background: rgba(142, 155, 176, 0.1);
+    border: 1px solid rgba(142, 155, 176, 0.2);
+    color: var(--text-muted);
+}
+/* Intermediate – cyan */
+.skill-tag.tag-intermediate {
+    background: rgba(0, 229, 255, 0.08);
+    border-color: rgba(0, 229, 255, 0.25);
+    color: var(--accent-cyan);
+}
+/* Advanced – green */
+.skill-tag.tag-advanced {
+    background: rgba(0, 255, 102, 0.08);
+    border-color: rgba(0, 255, 102, 0.3);
+    color: var(--accent-green);
+}
+
+/* ==========================================================================
    PROJECTS SECTION
    ========================================================================== */
 .project-filters {
