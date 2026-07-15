@@ -176,6 +176,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 1rem;
 }
 
 .logo {
@@ -247,6 +248,47 @@ a {
     transition: var(--transition-smooth);
 }
 
+/* Language Toggle Button */
+.lang-toggle {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.35rem 0.75rem;
+    background: rgba(0, 229, 255, 0.07);
+    border: 1px solid rgba(0, 229, 255, 0.25);
+    border-radius: 8px;
+    cursor: pointer;
+    color: var(--text-primary);
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: var(--transition-smooth);
+    backdrop-filter: blur(8px);
+    flex-shrink: 0;
+}
+.lang-toggle:hover {
+    background: rgba(0, 229, 255, 0.15);
+    border-color: var(--accent-cyan);
+    box-shadow: var(--glow-cyan);
+    color: var(--accent-cyan);
+}
+.lang-toggle .lang-flag {
+    font-size: 1rem;
+    line-height: 1;
+    transition: transform 0.15s ease;
+}
+.lang-toggle.lang-switching .lang-flag {
+    transform: rotateY(90deg);
+}
+.lang-toggle .lang-code {
+    transition: opacity 0.15s ease;
+}
+.lang-toggle.lang-switching .lang-code {
+    opacity: 0;
+}
+
+
 /* ==========================================================================
    HERO SECTION
    ========================================================================== */
@@ -280,6 +322,7 @@ a {
     margin-bottom: 1rem;
     background: linear-gradient(135deg, var(--text-primary) 30%, var(--text-muted));
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -615,6 +658,7 @@ a {
     flex-direction: column;
     justify-content: space-between;
     transition: var(--transition-smooth);
+    position: relative;
 }
 
 .project-card.hidden {
@@ -622,7 +666,65 @@ a {
 }
 .project-header-info {
     margin-bottom: 1rem;
+    padding-right: 3.5rem; /* space so title doesn't go under badge */
 }
+
+/* Team Size Badge — on project cards (absolute corner) */
+.team-badge {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 0.22rem 0.6rem;
+    border-radius: 20px;
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    font-weight: 600;
+    white-space: nowrap;
+    background: rgba(0, 229, 255, 0.08);
+    border: 1px solid rgba(0, 229, 255, 0.3);
+    color: var(--accent-cyan);
+    transition: var(--transition-smooth);
+    z-index: 1;
+}
+.team-badge i { font-size: 0.65rem; }
+.team-badge.team-large {
+    background: rgba(255, 176, 32, 0.1);
+    border-color: rgba(255, 176, 32, 0.45);
+    color: #ffb020;
+}
+.project-card:hover .team-badge {
+    background: rgba(0, 229, 255, 0.15);
+    box-shadow: 0 0 8px rgba(0, 229, 255, 0.2);
+}
+.project-card:hover .team-badge.team-large {
+    background: rgba(255, 176, 32, 0.18);
+    box-shadow: 0 0 8px rgba(255, 176, 32, 0.25);
+}
+
+/* Team Badge — inside modal */
+.modal-team-badge {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    background: rgba(0, 229, 255, 0.07);
+    border: 1px solid rgba(0, 229, 255, 0.2);
+    color: var(--accent-cyan);
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    width: fit-content;
+}
+.modal-team-icon {
+    font-size: 1.1rem;
+    line-height: 1;
+}
+
 .project-category {
     font-family: var(--font-mono);
     font-size: 0.75rem;

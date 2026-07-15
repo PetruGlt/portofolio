@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="ro">
+<html lang="ro" id="html-root">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Petru Gălățeanu | Portofoliu </title>
-    <meta name="description" content="PortofoliuL personal al lui Petru Gălățeanu.">
+    <title>Petru Gălățeanu | Portofoliu</title>
+    <meta name="description" content="Portofoliul personal al lui Petru Gălățeanu." id="meta-description">
     <meta name="keywords" content="Petru Gălățeanu, Portofoliu, Software Engineer">
     <meta name="author" content="Petru Gălățeanu">
 
@@ -35,12 +35,16 @@
             </a>
             <nav id="nav-menu">
                 <ul>
-                    <li><a href="#about" class="nav-link">Despre mine</a></li>
-                    <li><a href="#skills" class="nav-link">Competențe</a></li>
-                    <li><a href="#projects" class="nav-link">Proiecte</a></li>
-                    <li><a href="#contact" class="nav-link btn-contact">Contact</a></li>
+                    <li><a href="#about" class="nav-link" data-i18n="nav.about">Despre mine</a></li>
+                    <li><a href="#skills" class="nav-link" data-i18n="nav.skills">Competențe</a></li>
+                    <li><a href="#projects" class="nav-link" data-i18n="nav.projects">Proiecte</a></li>
+                    <li><a href="#contact" class="nav-link btn-contact" data-i18n="nav.contact">Contact</a></li>
                 </ul>
             </nav>
+            <button class="lang-toggle" id="lang-toggle" aria-label="Switch language">
+                <span class="lang-flag">🇷🇴</span>
+                <span class="lang-code" id="lang-code">RO</span>
+            </button>
             <button class="mobile-nav-toggle" id="mobile-toggle" aria-label="Toggle navigation menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -56,25 +60,25 @@
                 <div class="cyber-badge">STATUS: GRADUATED</div>
                 <h1 id="hero-title">Petru Gălățeanu</h1>
                 <h2 id="hero-subtitle">Software Engineer </h2>
-                <p class="hero-desc">
+                <p class="hero-desc" data-i18n="hero.desc">
                     Proaspăt absolvent al Facultății de Informatică din Iași (UAIC).
                 </p>
                 <div class="hero-actions">
-                    <a href="#projects" class="btn btn-secondary">Proiecte</a>
+                    <a href="#projects" class="btn btn-secondary" data-i18n="nav.projects">Proiecte</a>
                 </div>
             </div>
             <div class="hero-stats">
                 <div class="stat-card">
                     <span class="stat-num">16+</span>
-                    <span class="stat-label">Proiecte</span>
+                    <span class="stat-label" data-i18n="hero.stats.projects">Proiecte</span>
                 </div>
                 <div class="stat-card">
                     <span class="stat-num">8+</span>
-                    <span class="stat-label">Tehnologii Core</span>
+                    <span class="stat-label" data-i18n="hero.stats.tech">Tehnologii Core</span>
                 </div>
                 <div class="stat-card">
                     <span class="stat-num">10/10</span>
-                    <span class="stat-label">Pasiune</span>
+                    <span class="stat-label" data-i18n="hero.stats.passion">Pasiune</span>
                 </div>
             </div>
         </section>
@@ -82,7 +86,7 @@
         <!-- About Me Section -->
         <section id="about" class="section-container">
             <div class="section-header">
-                <h2 class="section-title">Despre Mine</h2>
+                <h2 class="section-title" data-i18n="about.title">Despre Mine</h2>
                 <div class="section-line"></div>
             </div>
             <div class="about-grid">
@@ -95,20 +99,20 @@
                 </div>
                 <div class="about-info-container">
                     <div class="about-text card-glass">
-                        <p>
-                            Sunt absolvent al Facultății de Informatică din cadrul Universității „Alexandru Ioan Cuza”
+                        <p data-i18n="about.p1">
+                            Sunt absolvent al Facultății de Informatică din cadrul Universității „Alexandru Ioan Cuza"
                             din
                             Iași (FII UAIC). Parcursul meu academic s-a concentrat pe înțelegerea în profunzime a
                             programării, a sistemelor distribuite și a dezvoltării web moderne.
                         </p>
-                        <p>
+                        <p data-i18n="about.p2">
                             Îmi place să construiesc arhitecturi scalabile, să explorez programarea la nivel de sistem
                             și să
                             creez servicii care comunică eficient.
                         </p>
                     </div>
                     <div class="skills-card card-glass">
-                        <h3>Tehnologii & Expertiză</h3>
+                        <h3 data-i18n="about.techTitle">Tehnologii & Expertiză</h3>
                         <div class="skills-grid">
 
                             <div class="skill-tag"><i class="fab fa-java"></i> Java / Spring Boot</div>
@@ -134,8 +138,8 @@
             <div class="licenta-grid">
                 <div class="licenta-info card-glass">
                     <span class="project-category">Smart Nutrition Platform</span>
-                    <h3>Kalo — Aplicație Multi-service Inteligentă</h3>
-                    <p>
+                    <h3 data-i18n="kalo.subtitle">Kalo — Aplicație Multi-service Inteligentă</h3>
+                    <p data-i18n="kalo.p1">
                         <strong>Kalo</strong> este o platformă completă destinată managementului nutrițional bazată pe
                         microservicii.
                         Aceasta integrează un API robust dezvoltat în <strong>.NET Core</strong> pentru identificarea
@@ -144,38 +148,35 @@
                         bussiness,Machine
                         Learning și integrările AI.
                     </p>
-                    <p>
+                    <p data-i18n="kalo.p2">
                         Aplicația integrează de asemenea suport pentru tehnologia <strong>NFC (Near Field
                             Communication)</strong>
                         pentru scanarea și logarea rapidă a alimentelor în cămară de către alți utilizatori.
                     </p>
                     <div class="licenta-features">
-                        <div class="feature-item"><i class="fas fa-check-circle"></i> Gateway Nginx centralizat</div>
-                        <div class="feature-item"><i class="fas fa-check-circle"></i> Autentificare securizată cu JWT
-                            partajat</div>
-                        <div class="feature-item"><i class="fas fa-check-circle"></i> Database seeding & migrații
-                            automate</div>
-                        <div class="feature-item"><i class="fas fa-check-circle"></i> Inteligență Artificială (FastAPI
-                            AI routes)</div>
+                        <div class="feature-item"><i class="fas fa-check-circle"></i> <span data-i18n="kalo.f1">Gateway Nginx centralizat</span></div>
+                        <div class="feature-item"><i class="fas fa-check-circle"></i> <span data-i18n="kalo.f2">Autentificare securizată cu JWT partajat</span></div>
+                        <div class="feature-item"><i class="fas fa-check-circle"></i> <span data-i18n="kalo.f3">Database seeding & migrații automate</span></div>
+                        <div class="feature-item"><i class="fas fa-check-circle"></i> <span data-i18n="kalo.f4">Inteligență Artificială (FastAPI AI routes)</span></div>
                     </div>
                     <div class="licenta-actions">
-                        <a href="Kalo.pdf" class="btn btn-primary" download><i class="fas fa-file-pdf"></i> Prezentare
+                        <a href="Kalo.pdf" class="btn btn-primary" download><i class="fas fa-file-pdf"></i> <span data-i18n="kalo.btnPresentation">Prezentare</span>
                         </a>
                         <a href="https://github.com/PetruGlt/Kalo" target="_blank" class="btn btn-secondary"><i
-                                class="fab fa-github"></i> Cod</a>
+                                class="fab fa-github"></i> <span data-i18n="kalo.btnCode">Cod</span></a>
                     </div>
                 </div>
 
                 <div class="licenta-video card-glass">
-                    <h3>Prezentare Video Demonstrativă</h3>
+                    <h3 data-i18n="kalo.videoTitle">Prezentare Video Demonstrativă</h3>
                     <div class="video-container">
                         <video controls poster="" class="cyber-video-player">
                             <source src="ProiectDemo4.mp4" type="video/mp4">
-                            Browserul tău nu suportă redarea video HTML5. Poți descărca fișierul <a
-                                href="ProiectDemo4.mp4">aici</a>.
+                            <span data-i18n="video.fallback">Browserul tău nu suportă redarea video HTML5. Poți descărca fișierul</span> <a
+                                href="ProiectDemo4.mp4" data-i18n="video.here">aici</a>.
                         </video>
                     </div>
-                    <p class="video-caption">Demonstrația practică a fluxurilor de utilizator, scanarea NFC și
+                    <p class="video-caption" data-i18n="kalo.videoCaption">Demonstrația practică a fluxurilor de utilizator, scanarea NFC și
                         recomandările nutriționale bazate pe inteligență artificială.</p>
                 </div>
             </div>
@@ -184,27 +185,28 @@
         <!-- Projects Section -->
         <section id="projects" class="section-container">
             <div class="section-header">
-                <h2 class="section-title">Proiecte </h2>
+                <h2 class="section-title" data-i18n="nav.projects">Proiecte</h2>
                 <div class="section-line"></div>
             </div>
 
             <!-- Project Category Filters -->
             <div class="project-filters">
-                <button class="filter-btn active" data-filter="all">Toate</button>
+                <button class="filter-btn active" data-filter="all" data-i18n="filter.all">Toate</button>
                 <button class="filter-btn" data-filter="dotnet">.NET / C#</button>
+                <button class="filter-btn" data-filter="java">Java</button>
                 <button class="filter-btn" data-filter="python">Python</button>
                 <button class="filter-btn" data-filter="c-cpp">C / C++ & Unity</button>
-                <button class="filter-btn" data-filter="web">Web & Altele</button>
+                <button class="filter-btn" data-filter="web" data-i18n="filter.web">Web & Altele</button>
             </div>
 
             <div class="projects-grid">
                 <!-- CampusEats -->
-                <div class="project-card card-glass" data-project="campuseats" data-categories="dotnet web">
+                <div class="project-card card-glass" data-project="campuseats" data-categories="dotnet web" data-team="4">
                     <div class="project-header-info">
                         <span class="project-category">Full-Stack / .NET 8</span>
                         <h3>CampusEats</h3>
                     </div>
-                    <p>Sistem modular de comenzi pentru cantine universitare, implementat folosind Vertical Slice Architecture, CQRS cu MediatR și interfață SPA în Blazor WASM.</p>
+                    <p data-i18n="proj.campuseats.desc">Sistem modular de comenzi pentru cantine universitare, implementat folosind Vertical Slice Architecture, CQRS cu MediatR și interfață SPA în Blazor WASM.</p>
                     <div class="project-tags">
                         <span>.NET 8</span>
                         <span>Blazor WASM</span>
@@ -212,16 +214,16 @@
                         <span>CQRS</span>
                         <span>xUnit</span>
                     </div>
-                    <button class="btn btn-secondary btn-sm">Află mai multe</button>
+                    <button class="btn btn-secondary btn-sm" data-i18n="proj.learnMore">Află mai multe</button>
                 </div>
 
                 <!-- StatesOfTheWorld -->
-                <div class="project-card card-glass" data-project="states-of-the-world" data-categories="python">
+                <div class="project-card card-glass" data-project="states-of-the-world" data-categories="python" data-team="1">
                     <div class="project-header-info">
                         <span class="project-category">Web Crawler & API</span>
                         <h3>States of the World</h3>
                     </div>
-                    <p>Web crawler automat pentru date geografice globale folosind BeautifulSoup, stocare SQLite normalizată și REST API auto-documentat cu Swagger.</p>
+                    <p data-i18n="proj.states.desc">Web crawler automat pentru date geografice globale folosind BeautifulSoup, stocare SQLite normalizată și REST API auto-documentat cu Swagger.</p>
                     <div class="project-tags">
                         <span>Python 3</span>
                         <span>Flask</span>
@@ -229,16 +231,16 @@
                         <span>SQLite</span>
                         <span>Swagger</span>
                     </div>
-                    <button class="btn btn-secondary btn-sm">Află mai multe</button>
+                    <button class="btn btn-secondary btn-sm" data-i18n="proj.learnMore">Află mai multe</button>
                 </div>
 
                 <!-- Chatbot -->
-                <div class="project-card card-glass" data-project="chatbot" data-categories="web">
+                <div class="project-card card-glass" data-project="chatbot" data-categories="java web" data-team="20">
                     <div class="project-header-info">
                         <span class="project-category">Multi-service Backend</span>
-                        <h3>Chatbot Bancar</h3>
+                        <h3 data-i18n="proj.chatbot.name">Chatbot Bancar</h3>
                     </div>
-                    <p>Sistem asistent distribuit compus dintr-un nucleu bancar robust în Spring Boot și un modul conversațional în NestJS interconectat cu Prisma ORM.</p>
+                    <p data-i18n="proj.chatbot.desc">Sistem asistent distribuit compus dintr-un nucleu bancar robust în Spring Boot și un modul conversațional în NestJS interconectat cu Prisma ORM.</p>
                     <div class="project-tags">
                         <span>Java</span>
                         <span>Spring Boot</span>
@@ -246,48 +248,48 @@
                         <span>TypeScript</span>
                         <span>PostgreSQL</span>
                     </div>
-                    <button class="btn btn-secondary btn-sm">Află mai multe</button>
+                    <button class="btn btn-secondary btn-sm" data-i18n="proj.learnMore">Află mai multe</button>
                 </div>
 
                 <!-- FileTransfer -->
-                <div class="project-card card-glass" data-project="file-transfer" data-categories="c-cpp">
+                <div class="project-card card-glass" data-project="file-transfer" data-categories="c-cpp" data-team="1">
                     <div class="project-header-info">
                         <span class="project-category">System Programming</span>
                         <h3>Custom FTP Server</h3>
                     </div>
-                    <p>Server și client de transfer fișiere la nivel de sistem UNIX în C, bazat pe procese concurente fork(), socket-uri TCP și securitate cu whitelist.</p>
+                    <p data-i18n="proj.ftp.desc">Server și client de transfer fișiere la nivel de sistem UNIX în C, bazat pe procese concurente fork(), socket-uri TCP și securitate cu whitelist.</p>
                     <div class="project-tags">
                         <span>C</span>
                         <span>TCP/IP Sockets</span>
                         <span>POSIX</span>
                         <span>Security Whitelist</span>
                     </div>
-                    <button class="btn btn-secondary btn-sm">Află mai multe</button>
+                    <button class="btn btn-secondary btn-sm" data-i18n="proj.learnMore">Află mai multe</button>
                 </div>
 
                 <!-- FlightFearVR -->
-                <div class="project-card card-glass" data-project="flight-fear-vr" data-categories="c-cpp">
+                <div class="project-card card-glass" data-project="flight-fear-vr" data-categories="c-cpp" data-team="3">
                     <div class="project-header-info">
                         <span class="project-category">Unity / VR</span>
                         <h3>FlightFearVR</h3>
                     </div>
-                    <p>Simulator VR imersiv terapeutic în Unity 3D și C# (OpenXR) pentru expunerea controlată și desensibilizarea pacienților cu aviofobie.</p>
+                    <p data-i18n="proj.vr.desc">Simulator VR imersiv terapeutic în Unity 3D și C# (OpenXR) pentru expunerea controlată și desensibilizarea pacienților cu aviofobie.</p>
                     <div class="project-tags">
                         <span>C#</span>
                         <span>Unity 3D</span>
                         <span>OpenXR SDK</span>
                         <span>UX Design</span>
                     </div>
-                    <button class="btn btn-secondary btn-sm">Află mai multe</button>
+                    <button class="btn btn-secondary btn-sm" data-i18n="proj.learnMore">Află mai multe</button>
                 </div>
 
                 <!-- LimbajLFAC -->
-                <div class="project-card card-glass" data-project="limbaj-lfac" data-categories="c-cpp">
+                <div class="project-card card-glass" data-project="limbaj-lfac" data-categories="c-cpp" data-team="2">
                     <div class="project-header-info">
                         <span class="project-category">Compiler Construction</span>
                         <h3>Custom Language</h3>
                     </div>
-                    <p>Compilator și interpret pentru un limbaj proprietar în C, folosind Flex pentru analiză lexicală, Bison pentru parsare sintactică și generare de AST.</p>
+                    <p data-i18n="proj.compiler.desc">Compilator și interpret pentru un limbaj proprietar în C, folosind Flex pentru analiză lexicală, Bison pentru parsare sintactică și generare de AST.</p>
                     <div class="project-tags">
                         <span>C</span>
                         <span>Flex</span>
@@ -295,16 +297,16 @@
                         <span>AST</span>
                         <span>Graphviz</span>
                     </div>
-                    <button class="btn btn-secondary btn-sm">Află mai multe</button>
+                    <button class="btn btn-secondary btn-sm" data-i18n="proj.learnMore">Află mai multe</button>
                 </div>
 
                 <!-- SportIS (LocalGreetings) -->
-                <div class="project-card card-glass" data-project="sportis" data-categories="web">
+                <div class="project-card card-glass" data-project="sportis" data-categories="web" data-team="2">
                     <div class="project-header-info">
                         <span class="project-category">Social Platform / PHP</span>
-                        <h3>SportIS - Platformă socială sportivă</h3>
+                        <h3 data-i18n="proj.sportis.name">SportIS - Platformă socială sportivă</h3>
                     </div>
-                    <p>Platformă socială MVC în PHP pentru organizarea de activități sportive locale, securizată nativ contra XSS/SQLi și documentată cu modelul C4.</p>
+                    <p data-i18n="proj.sportis.desc">Platformă socială MVC în PHP pentru organizarea de activități sportive locale, securizată nativ contra XSS/SQLi și documentată cu modelul C4.</p>
                     <div class="project-tags">
                         <span>PHP</span>
                         <span>MVC</span>
@@ -312,16 +314,16 @@
                         <span>JavaScript</span>
                         <span>C4 Model</span>
                     </div>
-                    <button class="btn btn-secondary btn-sm">Află mai multe</button>
+                    <button class="btn btn-secondary btn-sm" data-i18n="proj.learnMore">Află mai multe</button>
                 </div>
 
                 <!-- CollabStudy -->
-                <div class="project-card card-glass" data-project="collabstudy" data-categories="python web">
+                <div class="project-card card-glass" data-project="collabstudy" data-categories="python web" data-team="2">
                     <div class="project-header-info">
                         <span class="project-category">Cloud / Microservices</span>
                         <h3>CollabStudy</h3>
                     </div>
-                    <p>Platformă educațională distribuită bazată pe microservicii în Python (Flask) și Vue 3, ce folosește AI pentru generarea de rezumate și quiz-uri.</p>
+                    <p data-i18n="proj.collab.desc">Platformă educațională distribuită bazată pe microservicii în Python (Flask) și Vue 3, ce folosește AI pentru generarea de rezumate și quiz-uri.</p>
                     <div class="project-tags">
                         <span>Python (Flask)</span>
                         <span>Vue 3</span>
@@ -329,16 +331,16 @@
                         <span>SQL Server</span>
                         <span>Docker</span>
                     </div>
-                    <button class="btn btn-secondary btn-sm">Află mai multe</button>
+                    <button class="btn btn-secondary btn-sm" data-i18n="proj.learnMore">Află mai multe</button>
                 </div>
 
                 <!-- ImageResizer -->
-                <div class="project-card card-glass" data-project="image-resizer" data-categories="python web">
+                <div class="project-card card-glass" data-project="image-resizer" data-categories="python web" data-team="2">
                     <div class="project-header-info">
                         <span class="project-category">Cloud / Serverless</span>
                         <h3>PhotoResizer</h3>
                     </div>
-                    <p>Sistem serverless de procesare asincronă a imaginilor la rezoluții multiple, folosind GCP Cloud Functions și Firestore.</p>
+                    <p data-i18n="proj.resizer.desc">Sistem serverless de procesare asincronă a imaginilor la rezoluții multiple, folosind GCP Cloud Functions și Firestore.</p>
                     <div class="project-tags">
                         <span>Python</span>
                         <span>Flask</span>
@@ -346,16 +348,16 @@
                         <span>Cloud Storage</span>
                         <span>Firestore</span>
                     </div>
-                    <button class="btn btn-secondary btn-sm">Află mai multe</button>
+                    <button class="btn btn-secondary btn-sm" data-i18n="proj.learnMore">Află mai multe</button>
                 </div>
 
                 <!-- TemaSapt4 -->
-                <div class="project-card card-glass" data-project="tema-sapt4" data-categories="dotnet">
+                <div class="project-card card-glass" data-project="tema-sapt4" data-categories="dotnet" data-team="1">
                     <div class="project-header-info">
                         <span class="project-category">Backend Architecture</span>
                         <h3>Order Management API</h3>
                     </div>
-                    <p>API minimal enterprise în .NET Core pentru procesarea comenzilor cu MediatR, FluentValidation și
+                    <p data-i18n="proj.order.desc">API minimal enterprise în .NET Core pentru procesarea comenzilor cu MediatR, FluentValidation și
                         correlation tracking.</p>
                     <div class="project-tags">
                         <span>.NET Core</span>
@@ -363,16 +365,16 @@
                         <span>FluentValidation</span>
                         <span>AutoMapper</span>
                     </div>
-                    <button class="btn btn-secondary btn-sm">Află mai multe</button>
+                    <button class="btn btn-secondary btn-sm" data-i18n="proj.learnMore">Află mai multe</button>
                 </div>
 
                 <!-- Homework2 (Real-Time Dashboard) -->
-                <div class="project-card card-glass" data-project="homework2-dashboard" data-categories="dotnet web">
+                <div class="project-card card-glass" data-project="homework2-dashboard" data-categories="dotnet web" data-team="1">
                     <div class="project-header-info">
                         <span class="project-category">Full-Stack / .NET 10</span>
                         <h3>Real-Time Aggregator Dashboard</h3>
                     </div>
-                    <p>Dashboard interactiv combinând servicii de rețete Node.js locale, prognoze meteo OpenWeather și știri NewsAPI într-un backend .NET 10 securizat.</p>
+                    <p data-i18n="proj.dashboard.desc">Dashboard interactiv combinând servicii de rețete Node.js locale, prognoze meteo OpenWeather și știri NewsAPI într-un backend .NET 10 securizat.</p>
                     <div class="project-tags">
                         <span>.NET 10</span>
                         <span>Vue 3</span>
@@ -380,64 +382,64 @@
                         <span>SQLite</span>
                         <span>REST Integration</span>
                     </div>
-                    <button class="btn btn-secondary btn-sm">Află mai multe</button>
+                    <button class="btn btn-secondary btn-sm" data-i18n="proj.learnMore">Află mai multe</button>
                 </div>
 
                 <!-- DotGame -->
-                <div class="project-card card-glass" data-project="dotgame" data-categories="web">
+                <div class="project-card card-glass" data-project="dotgame" data-categories="java" data-team="2">
                     <div class="project-header-info">
                         <span class="project-category">Java / Swing & Graph Theory</span>
                         <h3>DotGame</h3>
                     </div>
-                    <p>Joc desktop interactiv bazat pe Teoria Grafurilor în Java Swing, ce calculează în timp real scorul optim al mutărilor folosind algoritmul Kruskal MST din biblioteca graph4j.</p>
+                    <p data-i18n="proj.dotgame.desc">Joc desktop interactiv bazat pe Teoria Grafurilor în Java Swing, ce calculează în timp real scorul optim al mutărilor folosind algoritmul Kruskal MST din biblioteca graph4j.</p>
                     <div class="project-tags">
                         <span>Java</span>
                         <span>Swing / AWT</span>
                         <span>Graph Theory</span>
                         <span>Kruskal's MST</span>
                     </div>
-                    <button class="btn btn-secondary btn-sm">Află mai multe</button>
+                    <button class="btn btn-secondary btn-sm" data-i18n="proj.learnMore">Află mai multe</button>
                 </div>
 
                 <!-- ConcurrencyScrabble -->
-                <div class="project-card card-glass" data-project="concurrency-scrabble" data-categories="web">
+                <div class="project-card card-glass" data-project="concurrency-scrabble" data-categories="java" data-team="1">
                     <div class="project-header-info">
                         <span class="project-category">Java Concurrency Sim</span>
                         <h3>Concurrent Scrabble Simulator</h3>
                     </div>
-                    <p>Simulare multi-thread în Java a unui joc de Scrabble, demonstrând sincronizarea resurselor partajate (TileBag, Board) între jucători concurenți.</p>
+                    <p data-i18n="proj.scrabble.desc">Simulare multi-thread în Java a unui joc de Scrabble, demonstrând sincronizarea resurselor partajate (TileBag, Board) între jucători concurenți.</p>
                     <div class="project-tags">
                         <span>Java</span>
                         <span>Multithreading</span>
                         <span>Synchronization</span>
                         <span>Thread Safety</span>
                     </div>
-                    <button class="btn btn-secondary btn-sm">Află mai multe</button>
+                    <button class="btn btn-secondary btn-sm" data-i18n="proj.learnMore">Află mai multe</button>
                 </div>
 
                 <!-- DocManager -->
-                <div class="project-card card-glass" data-project="doc-manager" data-categories="web">
+                <div class="project-card card-glass" data-project="doc-manager" data-categories="java" data-team="1">
                     <div class="project-header-info">
                         <span class="project-category">Java OOP & Serialization</span>
                         <h3>DocManager CLI Engine</h3>
                     </div>
-                    <p>Catalog modular de documente în Java utilizând Command Pattern, cu mecanisme abstracte de persistență (JSON, Binar și Text) și gestionare a fișierelor.</p>
+                    <p data-i18n="proj.docmanager.desc">Catalog modular de documente în Java utilizând Command Pattern, cu mecanisme abstracte de persistență (JSON, Binar și Text) și gestionare a fișierelor.</p>
                     <div class="project-tags">
                         <span>Java</span>
                         <span>Design Patterns</span>
                         <span>Serialization</span>
                         <span>CLI Engine</span>
                     </div>
-                    <button class="btn btn-secondary btn-sm">Află mai multe</button>
+                    <button class="btn btn-secondary btn-sm" data-i18n="proj.learnMore">Află mai multe</button>
                 </div>
 
                 <!-- JavaDbIntegrations -->
-                <div class="project-card card-glass" data-project="java-db-integrations" data-categories="web">
+                <div class="project-card card-glass" data-project="java-db-integrations" data-categories="java" data-team="1">
                     <div class="project-header-info">
                         <span class="project-category">Java / Databases & JPA</span>
                         <h3>Java DB Integrations</h3>
                     </div>
-                    <p>Colecție de servicii Java pentru persistența datelor, integrând conexiuni JDBC custom cu DAO Pattern, importatoare CSV și repo-uri JPA/Hibernate.</p>
+                    <p data-i18n="proj.javadb.desc">Colecție de servicii Java pentru persistența datelor, integrând conexiuni JDBC custom cu DAO Pattern, importatoare CSV și repo-uri JPA/Hibernate.</p>
                     <div class="project-tags">
                         <span>Java</span>
                         <span>JDBC</span>
@@ -445,7 +447,7 @@
                         <span>DAO Pattern</span>
                         <span>PostgreSQL</span>
                     </div>
-                    <button class="btn btn-secondary btn-sm">Află mai multe</button>
+                    <button class="btn btn-secondary btn-sm" data-i18n="proj.learnMore">Află mai multe</button>
                 </div>
             </div>
 
@@ -457,13 +459,13 @@
         <!-- Contact Section -->
         <section id="contact" class="section-container">
             <div class="section-header">
-                <h2 class="section-title">Contact</h2>
+                <h2 class="section-title" data-i18n="nav.contact">Contact</h2>
                 <div class="section-line"></div>
             </div>
             <div class="contact-grid">
                 <div class="contact-info card-glass">
-                    <h3>Să păstrăm legătura</h3>
-                    <p>Sunt în căutare de noi oportunități profesionale. Mă puteți contacta pentru proiecte, joburi sau
+                    <h3 data-i18n="contact.title">Să păstrăm legătura</h3>
+                    <p data-i18n="contact.desc">Sunt în căutare de noi oportunități profesionale. Mă puteți contacta pentru proiecte, joburi sau
                         discuții tehnice prin:</p>
                     <div class="contact-details">
                         <div class="detail-item">
@@ -481,22 +483,22 @@
                 <div class="contact-form card-glass">
                     <form id="portfolio-contact-form" novalidate>
                         <div class="form-group">
-                            <label for="name">Nume</label>
-                            <input type="text" id="name" name="name" placeholder="Nume" required>
-                            <span class="error-msg">Camp obligatoriu!</span>
+                            <label for="name" data-i18n="contact.form.name">Nume</label>
+                            <input type="text" id="name" name="name" data-i18n-placeholder="contact.form.namePh" placeholder="Nume" required>
+                            <span class="error-msg" data-i18n="contact.form.nameErr">Camp obligatoriu!</span>
                         </div>
                         <div class="form-group">
-                            <label for="email">Adresă de email</label>
+                            <label for="email" data-i18n="contact.form.email">Adresă de email</label>
                             <input type="email" id="email" name="email" placeholder="email@exemplu.com" required>
-                            <span class="error-msg">Introdu o adresă de email validă</span>
+                            <span class="error-msg" data-i18n="contact.form.emailErr">Introdu o adresă de email validă</span>
                         </div>
                         <div class="form-group">
-                            <label for="message">Mesaj</label>
-                            <textarea id="message" name="message" rows="5" placeholder="Mesajul tău..."
+                            <label for="message" data-i18n="contact.form.message">Mesaj</label>
+                            <textarea id="message" name="message" rows="5" data-i18n-placeholder="contact.form.messagePh" placeholder="Mesajul tău..."
                                 required></textarea>
-                            <span class="error-msg">Mesajul nu poate fi gol</span>
+                            <span class="error-msg" data-i18n="contact.form.messageErr">Mesajul nu poate fi gol</span>
                         </div>
-                        <button type="submit" class="btn btn-primary btn-block">Trimite Mesaj</button>
+                        <button type="submit" class="btn btn-primary btn-block" data-i18n="contact.form.submit">Trimite Mesaj</button>
                     </form>
                 </div>
             </div>
@@ -506,8 +508,8 @@
     <!-- Footer -->
     <footer>
         <div class="footer-container">
-            <p>&copy; 2026 Petru Gălățeanu. Toate drepturile rezervate.</p>
-            <p class="footer-subtext">Portofoliu creat cu HTML5, CSS3, JS</p>
+            <p>&copy; 2026 Petru Gălățeanu. <span data-i18n="footer.rights">Toate drepturile rezervate.</span></p>
+            <p class="footer-subtext" data-i18n="footer.built">Portofoliu creat cu HTML5, CSS3, JS</p>
         </div>
     </footer>
 
@@ -534,6 +536,7 @@
                     <div class="modal-body">
                         <div id="modal-icon" class="modal-icon-header"></div>
                         <h2 id="modal-title">Titlu Proiect</h2>
+                        <div class="modal-team-badge" id="modal-team-badge" style="display:none;"></div>
                         <div class="modal-badge-container" id="modal-badges"></div>
                         <div class="modal-description" id="modal-desc">
                             <!-- Dinamic content here -->
